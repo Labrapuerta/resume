@@ -1,2 +1,4 @@
 # resume
 LaTeX template for my personal resume
+
+[![Resume Preview](./resume.png)](./Resume.pdf)
