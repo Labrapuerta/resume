@@ -40,15 +40,15 @@
 \raggedbottom
 \raggedright
 \setlength{\tabcolsep}{0in}
+\setlength{\footskip}{4.08003pt}
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
+  \vspace{-7pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
-
 %-------------------------
 % Custom commands
 \newcommand{\resumeItem}[1]{
@@ -64,135 +64,149 @@
       \textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-7pt}
 }
-
 \newcommand{\resumeSubSubheading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textit{\small#1} & \textit{\small #2} \\
     \end{tabular*}\vspace{-7pt}
 }
-
 \newcommand{\resumeProjectHeading}[3]{
     \vspace{-2pt}\item
      \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \small#1 & #2 \\
-      \textit{\small#3} \\
+      \vspace{1pt}
+      \textit{\small#3}       
     \end{tabular*}\vspace{-7pt}
 }
-
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
-
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
-
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
-%-------------------------------------------
+%------------------------------------------%
+%%%%% Custom defs   %%%%%%%%%%%%%%%%%%%%%%%%
+\def\name{\textbf{\Huge \scshape Jose Manuel Hernandez de Labra}}
+\def\phone{\small +(52) 442-155-6023 }
+\def\mail{\href{mailto:jmhlabra@gmail.com}{\underline{jmhlabra@gmail.com }}}
+\def\linkedin{\href{https://linkedin.com/in/jmhlabra}{\underline{linkedin.com/jmhlabra }}}
+\def\github{\href{https://github.com/Labrapuerta}{\underline{github.com/Labrapuerta }}}
+\def\leetcode{\href{https://leetcode.com/u/ManuelLabra/}{\underline{leetcode.com/ManuelLabra }}}
+%-------------------------------------------%
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
+%%%% Header %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 \begin{center}
-    \textbf{\Huge \scshape Jose Manuel Hernandez de Labra} \\ \vspace{1pt}
-    \small +(52) 442-155-6023 $|$ \href{mailto:jmhlabra@gmail.com}{\underline{jmhlabra@gmail.com}} $|$ 
-    \href{https://linkedin.com/in/jmhlabra}{\underline{linkedin.com/jmhlabra}} $|$
-    \href{https://github.com/Labrapuerta}{\underline{github.com/Labrapuerta}}
+    \name \\ \vspace{1pt}
+     \phone $ |$ \mail $|$ \linkedin $|$ \github
 \end{center}
-
-
-%-----------EDUCATION-----------
+%-----------EDUCATION-------------%
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Tecnologico de Monterrey (ITESM)}{Monterrey, NL, Mexico}
-      {Bachelor of Science in Biomedical Engineering, Minor in Neuroscience}{Aug. 2018 -- Dec 2023}
-
-%When starting masters
-    %\resumeSubheading
-      %{Monterrey Institute of Higher Education (ITESM)}{Monterrey, NL, Mexico}
-      %{Master of Science in Computer Science}{Aug. 2023 -- Ongoing}
+      {B.Sc. in Biomedical Engineering with a Minor in Neuroscience}{Monterrey, NL, Mexico}
+      {\href{https://tec.mx/en}{\underline{Tecnologico de Monterrey (ITESM)}}}{Aug. 2018 -- Dec 2023}
+   \resumeSubheading
+      {M.Sc. in Bioinformatics for Health Sciences}{Barcelona, Spain}
+      {Jointly organized by {\href{https://www.upf.edu/}{\underline{Universitat Pompeu Fabra (UPF)}}} and the {\href{https://web.ub.edu/es/}{\underline{University of Barcelona (UB)}}}}{Sep. 2025 -- Present}
+    
   \resumeSubHeadingListEnd
 
+%%%% - Relevant Coursework ------- %
+%\section*{Relevant Coursework}
+%\noindent\begin{tabular}{@{} p{2in} p{2in} p{2in} p{2in} @{}}
+%\textbullet\ \textit{{}\small{Neuroengineering}}  & 
+%\textbullet\ \textit{{}\small{Microcontrollers}}  & 
+%\textbullet\ \textit{{}\small{Modeling of Physiological Sys.}}  & 
+%\textbullet\ \textit{{}\small{Medical Imaging}} \\
+%\textbullet\ \textit{{}\small{Advanced Mathematics}}  & 
+%\textbullet\ \textit{{}\small{Control Engineering}}  & 
+%\textbullet\ \textit{{}\small{Analysis of Signals and Sys.}}  &  
+%\textbullet\ \textit{{}\small{Applied Electronics}}
+%\end{tabular}
+%\vspace{-.4cm}
 
-%-----------EXPERIENCE-----------
+%%%
+%-----------EXPERIENCE------------%
 \section{Experience}
   \resumeSubHeadingListStart
-
     \resumeSubheading
-      {Data Scientist Intern}{Aug. 2022 -- Dec. 2022}
-      {Neuroscience Department, Zambrano Hospital}{Monterrey, NL}
+      {Neuroscience Department, Zambrano Hospital}{Aug. 2022 -- Dec. 2022}
+      {Data Scientist Intern}{Monterrey, NL}
       \resumeItemListStart
-        \resumeItem{Cleaned and processed data from various research projects conducted by psychologists and psychiatrists}
-        \resumeItem{Developed visual representations of research data, facilitating better understanding of research findings.}
-        \resumeItem{Applied machine learning models to classify patients and detect anomalies, enhancing the accuracy of diagnostics}
+        \resumeItem{Cleaned and processed research data collected by psychologists and psychiatrists.}
+        \resumeItem{Developed interactive data visualizations, enabling better comprehension of study findings.}
+        \resumeItem{Applied machine learning models for patient classification and anomaly detection, improving diagnostic precision.}
       \resumeItemListEnd
-
       
     \resumeSubheading
-      {Machine Learning Researcher}{Jan. 2024 -- Present}
-      {Core Lab Genomics}{Monterrey, NL}
+      {Core Lab Genomics}{Jan. 2024 -- May. 2025}
+      {Machine Learning Researcher}{Monterrey, NL}
       \resumeItemListStart
-        \resumeItem{Developed and optimized machine learning architectures for the analysis of RNA and biomolecules}
-        \resumeItem{Predicted three-dimensional structures of RNA, contributing to a deeper understanding of molecular interactions.}
-        \resumeItem{Utilized advanced algorithms to predict docking interactions between biomolecules and proteins, supporting the discovery of potential therapeutic targets and treatments.
-}
+        \resumeItem{Designed and optimized machine learning architectures for RNA and biomolecule analysis.}
+        \resumeItem{Predicted 3D RNA structures, contributing to advancements in molecular interaction studies.}
+        \resumeItem{Applied advanced docking algorithms to predict biomolecule-protein interactions, aiding in therapeutic target discovery.}
     \resumeItemListEnd
-
   \resumeSubHeadingListEnd
-    
-%-----------PROJECTS-----------
+
+%-----------PROJECTS---------------%
 \section{Research Projects}
     \resumeSubHeadingListStart
       \resumeProjectHeading
           {\href{https://2022.igem.wiki/tec-monterrey/index.html}{\textbf{\underline{rnAIR}}} $|$ \emph{Python, Tensorflow, Molecular Biology, Mathematical Modeling}}{Jan. 2022 -- Dec. 2022}
             {\href{https://competition.igem.org/}{\underline{IGEM competition}}} 
           \resumeItemListStart  
-            \resumeItem{Developed small RNAs using a neural network to predict binding RNAs that inhibit bacterial gene synthesis, aiming to resensitize bacteria to antibiotics.}
-            \resumeItem{Collected and analyzed datasets of small RNAs, conducted extensive research, and successfully developed a model to address antibiotic resistance.}
-            \resumeItem{Part of mathematical modeling and programming efforts, ensuring the development of a robust and accurate model}
+            \resumeItem{Developed neural network models to predict small RNA binding sites, enabling bacterial gene inhibition.}
+            \resumeItem{Collected and analyzed extensive datasets of small RNAs, addressing antibiotic resistance issues.}
+            \resumeItem{Contributed to mathematical modeling and programming efforts, ensuring model robustness and accuracy.}
           \resumeItemListEnd
+      \vspace{2pt}
       \resumeProjectHeading
         {\href{https://app.jogl.io/project/2019?tab=needs}{\textbf{\underline{ADA}}} $|$ \emph{Python, Docker, Tensorflow, Structural Bioinformatics, Molecular Dynamics}}{Jan. 2023 -- Dec. 2023}
         {\href{https://leagues.igem.org/design/2023/seasonfinale}{\underline{IGEM Design League}}} 
           \resumeItemListStart
-            \resumeItem{Led the mathematical modeling and programming efforts, driving the development of biosensors for detecting Alzheimer's}
-            \resumeItem{Developed aptamers using three-dimensional RNA models that bind to specific proteins}
-            \resumeItem{Implemented deep learning architectures, including mesh convolutions, and utilized Azure Virtual Machines for training}
+            \resumeItem{Led mathematical modeling and programming efforts to develop biosensors for Alzheimer’s detection.}
+            \resumeItem{Designed aptamers using 3D RNA models to bind specific proteins.}
+            \resumeItem{Trained deep learning architectures, including mesh convolutions and GAN's, on Azure Virtual Machines.}
           \resumeItemListEnd
+    \vspace{2pt}
     \resumeProjectHeading
-        {\href{https://github.com/Labrapuerta/STRAND}{\textbf{\underline{STRAND}}} $|$ \emph{Python, Azure, Pytorch, Molecular Dynamics}}{Jan. 2024 -- Ongoing}
-        {\href{https://tec.mx/es/investigacion}{\underline{Tec de Monterrey Research}}}
+        {\href{https://github.com/Labrapuerta/STRAND}{\textbf{\underline{STRAND}}} $|$ \emph{Python, Azure, Pytorch, Molecular Dynamics}}{Jan. 2024 -- Jan. 2025}
+        {{\href{https://tec.mx/es/investigacion}{\underline{Tecnologico de Monterrey}}} in colaboration with {\href{https://www.microsoft.com/en-us/research/group/ai-for-good-research-lab/}{\underline{Microsoft AI For Good Lab}}}}
           \resumeItemListStart
-            \resumeItem{Research on accurately predicting RNA three-dimensional structures, enhancing the understanding of RNA folding and interactions.}
-            \resumeItem{Created labeled datasets with precise intramolecular bindings}
-            \resumeItem{Utilized graph neural networks to develop more precise secondary structure contact maps}
-            \resumeItem{Leveraged contact maps as templates for predicting three-dimensional RNA structures}
+            \resumeItem{Conducted research to improve RNA 3D structure prediction, enhancing insights into RNA folding and interactions.}
+            \resumeItem{Generated labeled datasets with precise intramolecular bindings.}
+            \resumeItem{Developed graph neural networks for improved secondary structure contact maps.}
+            \resumeItem{Utilized contact maps as templates for accurate 3D RNA structure prediction.}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
 
-%
-%-----------PROGRAMMING SKILLS-----------
+%-----------SKILLS----------------%
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: Python, Assembler, SQL} \\
-     \textbf{Developer Tools}{: Git, Docker, Azure, VS Code, Visual Studio, Conda} \\
+     \textbf{Programing Languages}{: Python, Assembler, Bash, SQL, C, C++, LaTex} \\
+     \textbf{Developer Tools}{: Git, Docker, Azure, VS Code, Visual Studio, Conda, Linux} \\
      \textbf{Libraries}{: pandas, NumPy, Matplotlib, Tensorflow, Pytorch, SkLearn, }
+     \\
+     \textbf{Languages}{: \textbf{Spanish}{ - (Native)}, \textbf{English}{ - (C1)}, \textbf{French}{ - (A1)} }
     }}
  \end{itemize}
-
-%-----------Languages-----------
-\section{Languages}
+% ------- Others ------- %
+ \section{Additional Information}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Spanish}{ - Native} \\
-     \textbf{English}{ - C1} \\
-     \textbf{French}{ - A1} \\
+     \textbf{Awards and Achievements}\\
+        \vspace{-.2cm}
+        \resumeItemListStart
+            \resumeItem{\textbf{Two Gold Medals, iGEM Competition (2022, 2023)} – Recognized for excellence in synthetic biology research and innovative solutions.}
+            \resumeItem{\textbf{Judge, iGEM Competition (2024, 2025)} – Selected to evaluate and mentor competing teams, showcasing leadership and subject matter expertise.}
+          \resumeItemListEnd
+
     }}
  \end{itemize}
 
-
-%-------------------------------------------
+%----------------------------------%
 \end{document}
